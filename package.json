@@ -15,7 +15,6 @@
   "dependencies": {
     "@react-native-community/async-storage": "1.8.1",
     "core-native": "1.7.6",
-    "native-base": "2.13.12",
     "react": "16.13.0",
     "react-native": "0.61.5",
     "react-native-device-info": "5.5.3",
