@@ -9,7 +9,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start --reset-cache",
-    "check": "node ./node-scripts/check.js",
+    "check": "node node-script/check.js",
     "native": "cd ios && pod install && cd ../android && yarn jetify && ./gradlew clean"
   },
   "dependencies": {
