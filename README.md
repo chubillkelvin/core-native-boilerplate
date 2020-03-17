@@ -4,6 +4,8 @@ This project serves as a simple-to-use boilerplate project to implement the [cor
 
 It is a lightweight framework based on React Native + Redux + Redux Saga, in strict TypeScript.
 
+[V8 Javascript Engine](https://github.com/Kudo/react-native-v8) is used by android by default in this project for better performance.
+
 # Quick start
 
 To start, we recommend you to first have latest stable version of [nodejs](https://nodejs.org/en/) and [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) installed.
