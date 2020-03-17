@@ -14,7 +14,7 @@ export function bootstrap() {
     }
 
     startApp({
-        registeredAppName: "core-native-boilerplate",
+        registeredAppName: "CoreNativeBoilerplate",
         componentType: AppComponent,
         errorListener: new ErrorHandler(),
         logger: undefined,
