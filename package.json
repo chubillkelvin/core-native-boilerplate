@@ -19,7 +19,7 @@
     "react": "16.13.0",
     "react-native": "0.61.5",
     "react-native-device-info": "5.5.3",
-    "react-native-gesture-handler": "1.6.0",
+    "react-native-gesture-handler": "1.5.3",
     "react-native-splash-screen": "3.2.0",
     "react-native-v8": "0.61.5-patch.3",
     "react-navigation": "4.2.2",
