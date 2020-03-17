@@ -1,12 +1,15 @@
 {
   "name": "core-native-boilerplate",
   "version": "0.0.1",
-  "private": true,
+  "description": "A boilerplate project for the core-native library.",
+  "author": "Kelvin Chu <chubillkelvin@gmail.com> (github.com/RageBill)",
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "start": "react-native start --reset-cache",
+    "check": "node ./node-scripts/check.js",
     "native": "cd ios && pod install && cd ../android && yarn jetify && ./gradlew clean"
   },
   "dependencies": {
