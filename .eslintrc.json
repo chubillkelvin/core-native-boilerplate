@@ -8,7 +8,7 @@
     "ecmaFeatures": {"jsx": true}
   },
   "rules": {
-    "no-console": ["error", {"allow": ["info"]}],
+    "no-console": ["error", {"allow": ["info", "error"]}],
     "require-yield": "off",
     "object-shorthand": "error",
     "react/jsx-no-target-blank": "off",

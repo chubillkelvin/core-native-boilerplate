@@ -40,6 +40,8 @@ function compile() {
 }
 
 format("./*.{js,jsx,ts,tsx,json}");
+format("./app/**/*.{js,jsx,ts,tsx,json}");
 lint();
 checkPrettier("./*.{js,jsx,ts,tsx,json}");
+checkPrettier("./app/**/*.{js,jsx,ts,tsx,json}");
 compile();
