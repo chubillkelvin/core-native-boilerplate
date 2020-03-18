@@ -1001,11 +1001,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.1.tgz#96f606f8cd67fb018847d9b61e93997dabdefc72"
   integrity sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
 
-"@types/node@13.9.0":
-  version "13.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.0.tgz#5b6ee7a77faacddd7de719017d0bc12f52f81589"
-  integrity sha512-0ARSQootUG1RljH2HncpsY2TJBfGQIKOOi7kxzUY6z54ePu/ZD+wJA8zI2Q6v8rol2qpG/rvqsReco8zNMPvhQ==
-
 "@types/prop-types@*":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
@@ -1023,13 +1018,6 @@
   version "0.61.22"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.61.22.tgz#c624cce728f7d3f57c0f0c53bf4d95a8903f5b16"
   integrity sha512-17FmMa157l5lSfGf0ft5asMsKGsgFGYr9N3ULRat5YPfZSOlhwNJ0u9OR7MJOmxILKCdLvsfotPH2Vh+VVuGlQ==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-native@0.61.21":
-  version "0.61.21"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.61.21.tgz#7b698d1a1a1b9f108af2573b931f3d57e66e8479"
-  integrity sha512-wdA3owsYZ0/eSBji12uh4rqRYfRWlQ3PNI1D5+cmpTfr5/+mdH1WXfFAcM+ncD+zUQW6EmyizHmjT+S31EmjNg==
   dependencies:
     "@types/react" "*"
 
@@ -1836,14 +1824,14 @@ core-js@^2.2.2, core-js@^2.4.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-native@1.7.6:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/core-native/-/core-native-1.7.6.tgz#396d7ce26f044efbda2ec0364962a2c8f8b2a7ab"
-  integrity sha512-cVDOj229JVWf8wB1jzltHxqMYlLsFJ29spABzTx8teSYjfpXntyIBgbm2faLd4935wiE9+c8SaI4U9HW6zJUDQ==
+core-native@1.7.7:
+  version "1.7.7"
+  resolved "https://registry.yarnpkg.com/core-native/-/core-native-1.7.7.tgz#aab5ac6ff18254e8652a5f03406c057424fa38e3"
+  integrity sha512-tUw618a+mqniUYzufHubOJ8QPY+BGC7VlwzLmvtTTmIQ43YvOs4+fCesx9xY4/R4aAEdtXo8OApqLD9dzEenBA==
   dependencies:
-    "@types/node" "13.9.0"
+    "@types/node" "13.9.1"
     "@types/react" "*"
-    "@types/react-native" "0.61.21"
+    "@types/react-native" "0.61.22"
     "@types/react-navigation" "3.4.0"
     "@types/react-redux" "7.1.7"
     react "16.13.0"
