@@ -1,5 +1,5 @@
-import React from "react";
-import {StyleSheet, View, Text, SafeAreaView} from "react-native";
+import React, {FC} from "react";
+import {StyleSheet, View, Text} from "react-native";
 import {connect, DispatchProp} from "react-redux";
 import {RootState} from "app/type/state";
 
@@ -7,15 +7,13 @@ interface StateProps {}
 
 interface Props extends StateProps, DispatchProp {}
 
-class HomeMain extends React.PureComponent<Props> {
-    render() {
-        return (
-            <View style={styles.content}>
-                <Text style={styles.text}>Hello, World!</Text>
-            </View>
-        );
-    }
-}
+const HomeMain: FC<Props> = (props: Props) => {
+    return (
+        <View style={styles.content}>
+            <Text style={styles.text}>Hello, World!</Text>
+        </View>
+    );
+};
 
 const mapStateToProps = (state: RootState): StateProps => {
     return {};
