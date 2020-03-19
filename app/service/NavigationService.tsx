@@ -19,7 +19,7 @@ export const push = (name: keyof ParamListBase, params: ParamListBase) => {
 export const App: FC = () => {
     return (
         <NavigationContainer ref={navigationRef}>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen
                     name="Home"
                     component={HomeComponent}
