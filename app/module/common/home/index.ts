@@ -4,9 +4,11 @@ import HomeMain from "./component/Main";
 
 const initialState: State = {};
 
-class HomeModule extends Module<State> {
+class HomeModule extends Module<State, {testParam: string}> {
     @Lifecycle()
-    *onEnter(): SagaIterator {}
+    *onEnter(params: {testParam: string}): SagaIterator {
+        console.info("Home onEnter", JSON.stringify(params));
+    }
 }
 
 const module = register(new HomeModule("home", initialState));
