@@ -4,8 +4,10 @@ import {NavigationContainer, NavigationContainerRef, StackActions} from "@react-
 import {createStackNavigator} from "@react-navigation/stack";
 import {ParamListBase} from "@react-navigation/routers";
 
-const Stack = createStackNavigator();
-
+/**
+ * Navigation without the navigation prop
+ * ref: https://reactnavigation.org/docs/navigating-without-navigation-prop/
+ */
 const navigationRef = React.createRef<NavigationContainerRef>();
 
 export const navigate = (name: keyof ParamListBase, params: ParamListBase) => {
@@ -15,6 +17,8 @@ export const navigate = (name: keyof ParamListBase, params: ParamListBase) => {
 export const push = (name: keyof ParamListBase, params: ParamListBase) => {
     navigationRef.current?.dispatch(StackActions.push(name, params));
 };
+
+const Stack = createStackNavigator();
 
 export const App: FC = () => {
     return (
