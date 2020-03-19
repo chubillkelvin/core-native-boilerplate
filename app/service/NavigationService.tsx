@@ -26,6 +26,7 @@ export const App: FC = () => {
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen
                     name="Home"
+                    initialParams={{testParam: "Hello"}}
                     component={HomeComponent}
                     options={{
                         title: "core-native-boilerplate",
