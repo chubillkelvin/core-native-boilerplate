@@ -2,7 +2,7 @@
 
 This project serves as a simple-to-use boilerplate project to implement the [core-native](https://github.com/dionshihk/core-native-project) framework to a react-native project.
 
-It is a lightweight framework based on React Native + Redux + Redux Saga, in strict TypeScript.
+The [core-native](https://github.com/dionshihk/core-native-project) framework is a lightweight framework based on React Native + Redux + Redux Saga, in strict TypeScript.
 
 [V8 Javascript Engine](https://github.com/Kudo/react-native-v8) is used by android by default in this project for better performance.
 
@@ -35,3 +35,15 @@ Don't forget to update the `registeredAppName` in `app/bootstrap.ts`.
 # Development
 
 You can run `yarn run check` to format your code with prettier, lint your code, check for code style and compile it with typescript all in one go.
+
+# Can we use class components with core-native?
+
+Sure! The [core-native](https://github.com/dionshihk/core-native-project) framework works well with class components.
+
+The reason we recommend using function components is because of the [Fast Refresh](https://reactnative.dev/docs/fast-refresh) feature in React Native.
+
+The document says:
+
+`Local state is not preserved for class components (only function components and Hooks preserve state).`
+
+Therefore, use class components at your own risk.
