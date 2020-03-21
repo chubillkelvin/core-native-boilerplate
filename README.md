@@ -14,7 +14,7 @@ To work with ios, you will need to have [Xcode](https://developer.apple.com/xcod
 
 To work with android, you will need to have [Android Studio](https://developer.android.com/studio) and the relevant java & android sdks.
 
-Then, simply do `git clone https://github.com/RageBill/core-native-boilerplate.git <YOIR_PROJECT_NAME>`.
+Then, simply do `git clone https://github.com/RageBill/core-native-boilerplate.git <YOUR_PROJECT_NAME>`.
 
 # Usage
 
