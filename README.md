@@ -26,6 +26,12 @@ Then, simply do `git clone https://github.com/RageBill/core-native-boilerplate.g
 
 4. Run either `yarn ios` or `yarn android` to test out the project.
 
+# How to rename project
+
+To rename the project, you can try out [react-native-rename](https://github.com/junedomingo/react-native-rename).
+
+Don't forget to update the `registeredAppName` in `app/bootstrap.ts`.
+
 # Development
 
 You can run `yarn run check` to format your code with prettier, lint your code, check for code style and compile it with typescript all in one go.
