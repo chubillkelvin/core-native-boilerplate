@@ -5,5 +5,4 @@ function format(path) {
 }
 
 format("./*.{js,jsx,ts,tsx,json}");
-format("./node-script/**/*.{js,jsx,ts,tsx,json}");
 format("./app/**/*.{js,jsx,ts,tsx,json}");
