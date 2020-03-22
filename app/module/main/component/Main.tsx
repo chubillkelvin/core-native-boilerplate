@@ -1,19 +1,7 @@
-import React, {FC} from "react";
-import {connect, DispatchProp} from "react-redux";
-import {RootState} from "app/type/state";
+import React from "react";
 import {App as RootRouter} from "app/service/NavigationService";
 
-interface StateProps {}
-
-interface Props extends StateProps, DispatchProp {}
-
-const AppMain: FC<Props> = (props: Props) => {
+export default function AppMain() {
     // TODO: ContextProvider, GlobalLoadingIndicator, OverlayManager
     return <RootRouter />;
-};
-
-const mapStateToProps = (state: RootState): StateProps => {
-    return {};
-};
-
-export default connect(mapStateToProps)(AppMain);
+}

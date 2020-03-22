@@ -1,1 +1,3 @@
-export interface State {}
+export interface State {
+    welcomeText: string;
+}

@@ -1,25 +1,21 @@
-import React, {FC} from "react";
-import {StyleSheet, View, Text} from "react-native";
-import {connect, DispatchProp} from "react-redux";
-import {RootState} from "app/type/state";
+import React from "react";
+import {StyleSheet, View, Button} from "react-native";
+import {useDispatch} from "react-redux";
+import {useHomeState} from "../hooks";
+import {actions} from "../index";
 
-interface StateProps {}
+export default function HomeMain() {
+    const dispatch = useDispatch();
+    const welcomeText = useHomeState(state => state.welcomeText);
 
-interface Props extends StateProps, DispatchProp {}
+    const changeWelcomeText = () => dispatch(actions.changeWelcomeText());
 
-const HomeMain: FC<Props> = (props: Props) => {
     return (
         <View style={styles.content}>
-            <Text style={styles.text}>Hello, World!</Text>
+            <Button title={welcomeText} onPress={changeWelcomeText} />
         </View>
     );
-};
-
-const mapStateToProps = (state: RootState): StateProps => {
-    return {};
-};
-
-export default connect(mapStateToProps)(HomeMain);
+}
 
 const styles = StyleSheet.create({
     content: {
@@ -27,8 +23,5 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         justifyContent: "center",
         alignItems: "center",
-    },
-    text: {
-        fontSize: 24,
     },
 });
