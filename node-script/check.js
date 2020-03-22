@@ -14,5 +14,6 @@ function compile() {
 
 lint();
 checkPrettier("./*.{js,jsx,ts,tsx,json}");
+checkPrettier("./node-script/**/*.{js,jsx,ts,tsx,json}");
 checkPrettier("./app/**/*.{js,jsx,ts,tsx,json}");
 compile();
