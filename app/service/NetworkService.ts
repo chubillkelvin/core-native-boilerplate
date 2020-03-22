@@ -20,6 +20,10 @@ export class NetworkService {
 
     static async init(apiURL: string) {
         NetworkService.config.apiURL = apiURL;
+        /**
+         * Manually setting cookie to HttpRequestHeader
+         * ref: https://build.affinity.co/persisting-sessions-with-react-native-4c46af3bfd83
+         */
         setRequestHeaderInterceptor(headers => {
             Object.assign(headers, NetworkService.getHTTPHeaders());
         });
