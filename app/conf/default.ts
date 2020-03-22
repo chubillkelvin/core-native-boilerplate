@@ -1,3 +1,3 @@
 export default {
-    apiURL: "https://localhost:8443",
+    apiURL: "https://pokeapi.co", // TODO
 };

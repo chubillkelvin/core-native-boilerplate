@@ -1,9 +1,11 @@
-import {Lifecycle, Log, Module, register, SagaIterator} from "core-native";
+import {call, Lifecycle, Log, Module, register, SagaIterator} from "core-native";
 import {State} from "./type";
 import HomeMain from "./component/Main";
+import {PokemonAPIService} from "app/service/api/PokemonAPIService";
 
 const initialState: State = {
-    welcomeText: "Press Me!",
+    welcomeText: "I am a button, press me!",
+    pokemon: null,
 };
 
 class HomeModule extends Module<State, {testParam: string}> {
@@ -15,6 +17,12 @@ class HomeModule extends Module<State, {testParam: string}> {
     @Log()
     *changeWelcomeText(): SagaIterator {
         this.setState({welcomeText: "Hello, World!"});
+    }
+
+    @Log()
+    *fetchPokemon(name: string): SagaIterator {
+        const pokemon = yield* call(PokemonAPIService.fetchPokemon, name);
+        this.setState({pokemon});
     }
 }
 
