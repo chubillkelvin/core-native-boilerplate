@@ -10,6 +10,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start --reset-cache",
     "check": "node node-script/check.js",
+    "format": "node node-script/format.js",
     "native": "cd ios && pod install && cd ../android && yarn jetify && ./gradlew clean",
     "debug": "open rndebugger://set-debugger-loc?host=localhost&port=8081"
   },
