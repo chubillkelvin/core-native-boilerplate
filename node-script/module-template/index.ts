@@ -2,9 +2,7 @@ import {Lifecycle, Module, register, SagaIterator} from "core-native";
 import {State} from "./type";
 import {2}Main from "./component/Main";
 
-const initialState: State = {
-    welcomeText: "Press Me!",
-};
+const initialState: State = {};
 
 class {2}Module extends Module<State> {
     @Lifecycle()

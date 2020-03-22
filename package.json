@@ -7,12 +7,13 @@
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start --reset-cache",
     "check": "node node-script/check.js",
+    "debug": "open rndebugger://set-debugger-loc?host=localhost&port=8081",
     "format": "node node-script/format.js",
+    "ios": "react-native run-ios",
+    "module": "node node-script/module.js",
     "native": "cd ios && pod install && cd ../android && yarn jetify && ./gradlew clean",
-    "debug": "open rndebugger://set-debugger-loc?host=localhost&port=8081"
+    "start": "react-native start --reset-cache"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.8.1",
