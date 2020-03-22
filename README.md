@@ -69,3 +69,9 @@ The document says:
 `Local state is not preserved for class components (only function components and Hooks preserve state).`
 
 Therefore, use class components at your own risk.
+
+# References
+
+- [neowu/core-fe-project](https://github.com/neowu/core-fe-project)
+- [dionshihk/core-native-project](https://github.com/dionshihk/core-native-project)
+- [neowu/frontend-demo-project](https://github.com/neowu/frontend-demo-project)
