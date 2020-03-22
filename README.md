@@ -1,6 +1,7 @@
 # core-native-boilerplate
 
-[![react-native-autoscroll-flatlist is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RageBill/core-native-boilerplate/blob/master/LICENSE)
+[![core-native-boilerplate is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RageBill/core-native-boilerplate/blob/master/LICENSE)
+[![core-native-boilerplate's current npm package version](https://badge.fury.io/js/core-native-boilerplate.svg)](https://www.npmjs.org/package/core-native-boilerplate)
 
 This project serves as a simple-to-use boilerplate project to implement the [core-native](https://github.com/dionshihk/core-native-project) framework to a react-native project.
 
