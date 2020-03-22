@@ -3,6 +3,7 @@ import {StyleSheet, View, Button} from "react-native";
 import {useDispatch} from "react-redux";
 import {useHomeState} from "../hooks";
 import {actions} from "../index";
+import {globalStyles} from "app/util/globalDefinition";
 
 export default function HomeMain() {
     const dispatch = useDispatch();
@@ -11,17 +12,14 @@ export default function HomeMain() {
     const changeWelcomeText = () => dispatch(actions.changeWelcomeText());
 
     return (
-        <View style={styles.content}>
+        <View style={[globalStyles.flex1Center, styles.container]}>
             <Button title={welcomeText} onPress={changeWelcomeText} />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    content: {
-        flex: 1,
+    container: {
         backgroundColor: "white",
-        justifyContent: "center",
-        alignItems: "center",
     },
 });
