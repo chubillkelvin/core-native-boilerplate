@@ -34,7 +34,29 @@ Don't forget to update the `registeredAppName` in `app/bootstrap.ts`.
 
 # Development
 
-You can run `yarn run check` to format your code with prettier, lint your code, check for code style and compile it with typescript all in one go.
+### Module generation
+
+The structure of a module is opinionated in the core-native framework. To create a new module, we have prepared a module generation script to ease the process.
+
+To create a new sub-module, first, make sure you create the necessary module folder. In this example, we have `common` and `main` module folders.
+
+Then, after you have the module folder ready, you can then run `yarn module {module_name}/{sub_module_name}`.
+
+For example, if you want to create `account/home`, first, you will need to create the `account` folder under the module folder.
+
+Then, you can run `yarn module account/home` and then you will have the `account/home` module as needed.
+
+If you need to create `account/create` module next, since you already have the `account` folder, this time you can simply run `yarn module account/create`. 
+
+### Format code
+
+You can format your codes with prettier by running `yarn format`.
+
+### Code checking
+
+You can run `yarn run check` to lint your code, check for code style and compile it with typescript all in one go.
+
+Since react native does not need the compiled output from typescript at this stage, the `no-emit` flag is set to true at `tsconfig.json`.
 
 # Can we use class components with core-native?
 
