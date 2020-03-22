@@ -1,10 +1,24 @@
 {
   "name": "core-native-boilerplate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A boilerplate project for the core-native library.",
   "author": "Kelvin Chu <chubillkelvin@gmail.com> (github.com/RageBill)",
   "license": "MIT",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "react-native",
+    "redux",
+    "redux-saga",
+    "typescript",
+    "boilerplate",
+    "core-native",
+    "framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RageBill/core-native-boilerplate.git"
+  },
   "scripts": {
     "android": "react-native run-android",
     "check": "node node-script/check.js",

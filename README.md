@@ -1,5 +1,7 @@
 # core-native-boilerplate
 
+[![react-native-autoscroll-flatlist is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RageBill/core-native-boilerplate/blob/master/LICENSE)
+
 This project serves as a simple-to-use boilerplate project to implement the [core-native](https://github.com/dionshihk/core-native-project) framework to a react-native project.
 
 The [core-native](https://github.com/dionshihk/core-native-project) framework is a lightweight framework based on React Native + Redux + Redux Saga, in strict TypeScript.
