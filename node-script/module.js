@@ -82,7 +82,7 @@ function generate() {
     const moduleNameInArg = yargs.argv._[0];
 
     try {
-        const nameRegex = /^[a-z]+?((\-[a-z]+?)|(\-v[0-9]+?))*$/;
+        const nameRegex = /^[a-z]+?((-[a-z]+?)|(-v[0-9]+?))*$/;
         if (!fs.existsSync(rootStatePath)) throw new Error("File type/state.ts does not exist");
         if (!moduleNameInArg) throw new Error("Missing module name in command line");
         const splitModuleNames = moduleNameInArg.split("/");
