@@ -2,13 +2,14 @@ import {call, Lifecycle, Log, Module, register, SagaIterator} from "core-native"
 import {State} from "./type";
 import HomeMain from "./component/Main";
 import {PokemonAPIService} from "app/service/api/PokemonAPIService";
+import {RootState} from "app/type/state";
 
 const initialState: State = {
     welcomeText: "I am a button, press me!",
     pokemon: null,
 };
 
-class HomeModule extends Module<State, {testParam: string}> {
+class HomeModule extends Module<RootState, "home", {testParam: string}> {
     @Lifecycle()
     *onEnter(params: {testParam: string}): SagaIterator {
         console.info("Home onEnter", JSON.stringify(params));

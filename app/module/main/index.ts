@@ -2,10 +2,11 @@ import {Lifecycle, Module, register, SagaIterator} from "core-native";
 import {State} from "./type";
 import AppMain from "./component/Main";
 import SplashScreen from "react-native-splash-screen";
+import {RootState} from "app/type/state";
 
 const initialState: State = {};
 
-class MainModule extends Module<State> {
+class MainModule extends Module<RootState, "main"> {
     @Lifecycle()
     *onEnter(): SagaIterator {
         /**

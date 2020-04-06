@@ -1022,10 +1022,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.1.tgz#96f606f8cd67fb018847d9b61e93997dabdefc72"
   integrity sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
 
-"@types/node@13.9.2":
-  version "13.9.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.2.tgz#ace1880c03594cc3e80206d96847157d8e7fa349"
-  integrity sha512-bnoqK579sAYrQbp73wwglccjJ4sfRdKU7WNEZ5FW4K2U6Kc0/eZ5kvXG0JKsEKFB50zrFmfFt52/cvBbZa7eXg==
+"@types/node@13.9.8":
+  version "13.9.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.8.tgz#09976420fc80a7a00bf40680c63815ed8c7616f4"
+  integrity sha512-1WgO8hsyHynlx7nhP1kr0OFzsgKz5XDQL+Lfc3b1Q3qIln/n8cKD4m09NJ0+P1Rq7Zgnc7N0+SsMnoD1rEb0kA==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -1047,10 +1047,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.61.23":
-  version "0.61.23"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.61.23.tgz#bff4e0311c229a5203eb37aacd4febf59f3e2980"
-  integrity sha512-upHmySsrVBDBokWWhYIKkKnpvadsHdioSjbBTu4xl7fjN0yb94KR5ngUOBXsyqAYqQzF+hP6qpvobG9M7Jr6hw==
+"@types/react-native@0.62.1":
+  version "0.62.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.1.tgz#a51d50ade85420a68d594778316ed74e5040078c"
+  integrity sha512-4uKqYGek9/OstJWW0hEfF/6fx8BzNkzdAFxeY+VOxec+SPKK/hvGEjnX6+0jV1MnJDBHYKdWfWA4sYCQ8G3sqA==
   dependencies:
     "@types/react" "*"
 
@@ -1866,16 +1866,16 @@ core-js@^2.2.2, core-js@^2.4.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-native@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/core-native/-/core-native-1.8.1.tgz#ebbc6400c412986a316870e3a70a0516632ef8b7"
-  integrity sha512-b5sC8NAknE7tUC2Kg1Ks8hsXW4XgP/nvpwJ2Vjt6PCL4YT7fFj5LhpnzLFKLY6Ceb+B1LtKRMqMhKxUlj1UW6A==
+core-native@1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/core-native/-/core-native-1.8.4.tgz#12b401cb6a86cf9b17ed751a8dbd58269ae77ecf"
+  integrity sha512-Rh9oO9B876b5u1Rvj2i4HKIdR+R15BiLqE7oqq82hGwfX8d81IpHtmvN2dpWkFGHIT0Z7m/DyqFR3/uuhoRJrA==
   dependencies:
-    "@types/node" "13.9.2"
+    "@types/node" "13.9.8"
     "@types/react" "*"
-    "@types/react-native" "0.61.23"
+    "@types/react-native" "0.62.1"
     "@types/react-redux" "7.1.7"
-    react "16.13.0"
+    react "16.13.1"
     react-redux "7.2.0"
     redux "4.0.5"
     redux-saga "1.1.3"
@@ -4589,6 +4589,15 @@ react@16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
   integrity sha512-TSavZz2iSLkq5/oiE7gnFzmURKZMltmi193rm5HEoUDAXpzT9Kzw6oNZnGoai/4+fUnm7FqS5dwgUL34TujcWQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+
+react@16.13.1:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
+  integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
