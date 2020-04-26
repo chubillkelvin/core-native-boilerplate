@@ -7,6 +7,7 @@ import {RootState} from "app/type/state";
 const initialState: State = {
     welcomeText: "I am a button, press me!",
     pokemon: null,
+    someData: ["Line 1", "Line 2", "Line 3"],
 };
 
 class HomeModule extends Module<RootState, "home", {testParam: string}> {
@@ -17,6 +18,7 @@ class HomeModule extends Module<RootState, "home", {testParam: string}> {
 
     @Log()
     *changeWelcomeText(): SagaIterator {
+        // Normal usage of setState similar to React's setState
         this.setState({welcomeText: "Hello, World!"});
     }
 
@@ -24,6 +26,12 @@ class HomeModule extends Module<RootState, "home", {testParam: string}> {
     *fetchPokemon(name: string): SagaIterator {
         const pokemon = yield* call(PokemonAPIService.fetchPokemon, name);
         this.setState({pokemon});
+    }
+
+    @Log()
+    *addLine(): SagaIterator {
+        // Example usage of setState with Immer
+        this.setState(state => state.someData.push(`Line ${state.someData.length + 1}`));
     }
 }
 
