@@ -13,11 +13,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2BF46CDE2428B91DE6B81481 /* libPods-CoreNativeBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 817A6C7D48EF0FEC6D50543A /* libPods-CoreNativeBoilerplateTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* CoreNativeBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CoreNativeBoilerplateTests.m */; };
+		720A11A91286F3B31CEE4C6A /* libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5192184D083D6789D9962BF1 /* libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a */; };
 		8D1866F9A9A095527983DC2D /* libPods-CoreNativeBoilerplate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC85F88D58B88AD2DFF4539 /* libPods-CoreNativeBoilerplate-tvOSTests.a */; };
 		C629368B32A85B6486DD79EB /* libPods-CoreNativeBoilerplate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB824466B9A4C3B4C9654BE /* libPods-CoreNativeBoilerplate-tvOS.a */; };
 /* End PBXBuildFile section */
@@ -54,12 +54,14 @@
 		2D02E47B1E0B4A5D006451C7 /* CoreNativeBoilerplate-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreNativeBoilerplate-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* CoreNativeBoilerplate-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreNativeBoilerplate-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45780DC8E4143ED54F7ACA36 /* Pods-CoreNativeBoilerplate-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-tvOSTests/Pods-CoreNativeBoilerplate-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5192184D083D6789D9962BF1 /* libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		541D358C009E363E0C86B7C7 /* Pods-CoreNativeBoilerplate-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-tvOS/Pods-CoreNativeBoilerplate-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		54D63175EB703AFC87BCA70B /* Pods-CoreNativeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplateTests/Pods-CoreNativeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		65ED04F080B6092D27742673 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests/Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		715E5FA76B941BB3F99CDE9E /* Pods-CoreNativeBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate/Pods-CoreNativeBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
-		817A6C7D48EF0FEC6D50543A /* libPods-CoreNativeBoilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreNativeBoilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F604651491BC05864619B5E /* Pods-CoreNativeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate/Pods-CoreNativeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		991DCC2C66C6A693E03A8007 /* libPods-CoreNativeBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreNativeBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B630734DC516B6FC32F8BAF2 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests/Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEB824466B9A4C3B4C9654BE /* libPods-CoreNativeBoilerplate-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreNativeBoilerplate-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E36910325BDC688DB1ADA0 /* Pods-CoreNativeBoilerplate-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-tvOSTests/Pods-CoreNativeBoilerplate-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D68F8D6BDE10BFBF5A135D39 /* Pods-CoreNativeBoilerplate-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNativeBoilerplate-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CoreNativeBoilerplate-tvOS/Pods-CoreNativeBoilerplate-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF46CDE2428B91DE6B81481 /* libPods-CoreNativeBoilerplateTests.a in Frameworks */,
+				720A11A91286F3B31CEE4C6A /* libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +146,7 @@
 				991DCC2C66C6A693E03A8007 /* libPods-CoreNativeBoilerplate.a */,
 				BEB824466B9A4C3B4C9654BE /* libPods-CoreNativeBoilerplate-tvOS.a */,
 				ECC85F88D58B88AD2DFF4539 /* libPods-CoreNativeBoilerplate-tvOSTests.a */,
-				817A6C7D48EF0FEC6D50543A /* libPods-CoreNativeBoilerplateTests.a */,
+				5192184D083D6789D9962BF1 /* libPods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,6 +162,8 @@
 				C2E36910325BDC688DB1ADA0 /* Pods-CoreNativeBoilerplate-tvOSTests.release.xcconfig */,
 				DBE4C2109DA1F5FDF703C07E /* Pods-CoreNativeBoilerplateTests.debug.xcconfig */,
 				54D63175EB703AFC87BCA70B /* Pods-CoreNativeBoilerplateTests.release.xcconfig */,
+				B630734DC516B6FC32F8BAF2 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.debug.xcconfig */,
+				65ED04F080B6092D27742673 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -402,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoreNativeBoilerplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -580,7 +584,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBE4C2109DA1F5FDF703C07E /* Pods-CoreNativeBoilerplateTests.debug.xcconfig */;
+			baseConfigurationReference = B630734DC516B6FC32F8BAF2 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -603,7 +607,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54D63175EB703AFC87BCA70B /* Pods-CoreNativeBoilerplateTests.release.xcconfig */;
+			baseConfigurationReference = 65ED04F080B6092D27742673 /* Pods-CoreNativeBoilerplate-CoreNativeBoilerplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;

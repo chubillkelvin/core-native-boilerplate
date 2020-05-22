@@ -76,7 +76,6 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-        entryFile   : "index.js",
         enableHermes: false,  // clean and rebuild if changing
 ]
 
@@ -185,6 +184,9 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
     // Add v8-android - prebuilt libv8android.so into APK
     implementation 'org.chromium:v8-android:+'
 
