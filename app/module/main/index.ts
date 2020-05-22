@@ -1,6 +1,6 @@
 import {Lifecycle, Module, register, SagaIterator} from "core-native";
 import {State} from "./type";
-import AppMain from "./component/Main";
+import {AppMain} from "./component/Main";
 import SplashScreen from "react-native-splash-screen";
 import {RootState} from "app/type/state";
 

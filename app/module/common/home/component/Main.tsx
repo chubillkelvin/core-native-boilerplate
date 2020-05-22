@@ -5,7 +5,7 @@ import {actions} from "../index";
 import {globalStyles} from "app/util/globalDefinition";
 import {useModuleAction} from "core-native";
 
-export default function HomeMain() {
+export const HomeMain = React.memo(() => {
     // welcomeText
     const welcomeText = useHomeState(state => state.welcomeText);
     const changeWelcomeText = useModuleAction(actions.changeWelcomeText);
@@ -30,7 +30,9 @@ export default function HomeMain() {
             <FlatList data={someData} renderItem={renderSomeDataItem} keyExtractor={item => item} />
         </View>
     );
-}
+});
+
+HomeMain.displayName = "HomeMain";
 
 const styles = StyleSheet.create({
     image: {

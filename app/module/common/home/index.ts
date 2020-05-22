@@ -1,6 +1,6 @@
 import {call, Lifecycle, Log, Module, register, SagaIterator} from "core-native";
 import {State} from "./type";
-import HomeMain from "./component/Main";
+import {HomeMain} from "./component/Main";
 import {PokemonAPIService} from "app/service/api/PokemonAPIService";
 import {RootState} from "app/type/state";
 

@@ -2,11 +2,13 @@ import React from "react";
 import {StyleSheet, View} from "react-native";
 import {useDispatch} from "react-redux";
 
-export default function {1}() {
+export const {1} = React.memo(() => {
     const dispatch = useDispatch();
 
     return <View />;
-}
+});
+
+{1}.displayName = "{1}";
 
 const styles = StyleSheet.create({
     content: {
