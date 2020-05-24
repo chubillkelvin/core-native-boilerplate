@@ -33,7 +33,21 @@ Then, simply do `git clone https://github.com/RageBill/core-native-boilerplate.g
 
 To rename the project, you can try out [react-native-rename](https://github.com/junedomingo/react-native-rename).
 
-Don't forget to update the `registeredAppName` in `app/bootstrap.ts`.
+To do so, you can run:
+
+`npx react-native-rename "New App Name Here"`
+
+After this, you will have a few other places to rename your app manually, here's the list:
+
+```
+- package.json
+- app/bootstrap.ts
+- android/app/_BUCK
+```
+
+Don't forget you'll have to run `yarn native` again since renaming the project will modify the `Podfile`.
+
+You are now good to go!
 
 # Development
 
