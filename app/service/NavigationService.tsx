@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React from "react";
 import {HomeComponent} from "../module/common/home";
 import {NavigationContainer, NavigationContainerRef, StackActions} from "@react-navigation/native";
 import {createStackNavigator} from "@react-navigation/stack";
@@ -18,23 +18,30 @@ export const push = (name: keyof ParamListBase, params: ParamListBase) => {
     navigationRef.current?.dispatch(StackActions.push(name, params));
 };
 
-const Stack = createStackNavigator();
+/**
+ * Navigators and Screens
+ * Structure reference from: https://akveo.github.io/react-native-ui-kitten/docs/guides/configure-navigation#create-navigator
+ */
 
-export const App: FC = () => {
-    return (
-        <NavigationContainer ref={navigationRef}>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen
-                    name="Home"
-                    initialParams={{testParam: "Hello"}}
-                    component={HomeComponent}
-                    options={{
-                        title: "core-native-boilerplate",
-                        headerTintColor: "white",
-                        headerStyle: {backgroundColor: "steelblue"},
-                    }}
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
-};
+const {Navigator, Screen} = createStackNavigator();
+
+const HomeNavigator = () => (
+    <Navigator initialRouteName="Home">
+        <Screen
+            name="Home"
+            initialParams={{testParam: "Hello"}}
+            component={HomeComponent}
+            options={{
+                title: "core-native-boilerplate",
+                headerTintColor: "white",
+                headerStyle: {backgroundColor: "steelblue"},
+            }}
+        />
+    </Navigator>
+);
+
+export const AppNavigator = () => (
+    <NavigationContainer ref={navigationRef}>
+        <HomeNavigator />
+    </NavigationContainer>
+);
