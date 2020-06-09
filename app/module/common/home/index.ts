@@ -3,6 +3,7 @@ import {State} from "./type";
 import {HomeMain} from "./component/Main";
 import {PokemonAPIService} from "app/service/api/PokemonAPIService";
 import {RootState} from "app/type/state";
+import {NavigationService} from "../../../service/NavigationService";
 
 const initialState: State = {
     welcomeText: "I am a button, press me!",
@@ -32,6 +33,11 @@ class HomeModule extends Module<RootState, "home", {testParam: string}> {
     *addLine(): SagaIterator {
         // Example usage of setState with Immer
         this.setState(state => state.someData.push(`Line ${state.someData.length + 1}`));
+    }
+
+    @Log()
+    *goToDemoPage(): SagaIterator {
+        NavigationService.push("Demo");
     }
 }
 

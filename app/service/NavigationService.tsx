@@ -1,5 +1,6 @@
 import React from "react";
-import {HomeComponent} from "../module/common/home";
+import {HomeComponent} from "app/module/common/home";
+import {DemoComponent} from "app/module/common/demo";
 import {NavigationContainer, NavigationContainerRef, StackActions} from "@react-navigation/native";
 import {createStackNavigator} from "@react-navigation/stack";
 import {ParamListBase} from "@react-navigation/routers";
@@ -10,11 +11,11 @@ import {ParamListBase} from "@react-navigation/routers";
  */
 const navigationRef = React.createRef<NavigationContainerRef>();
 
-export const navigate = (name: keyof ParamListBase, params: ParamListBase) => {
+const navigate = (name: keyof ParamListBase, params?: ParamListBase) => {
     navigationRef.current?.navigate(name, params);
 };
 
-export const push = (name: keyof ParamListBase, params: ParamListBase) => {
+const push = (name: keyof ParamListBase, params?: ParamListBase) => {
     navigationRef.current?.dispatch(StackActions.push(name, params));
 };
 
@@ -23,11 +24,11 @@ export const push = (name: keyof ParamListBase, params: ParamListBase) => {
  * Structure reference from: https://akveo.github.io/react-native-ui-kitten/docs/guides/configure-navigation#create-navigator
  */
 
-const {Navigator, Screen} = createStackNavigator();
+const Stack = createStackNavigator();
 
 const HomeNavigator = () => (
-    <Navigator initialRouteName="Home">
-        <Screen
+    <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
             name="Home"
             initialParams={{testParam: "Hello"}}
             component={HomeComponent}
@@ -37,7 +38,8 @@ const HomeNavigator = () => (
                 headerStyle: {backgroundColor: "steelblue"},
             }}
         />
-    </Navigator>
+        <Stack.Screen name="Demo" component={DemoComponent} options={{title: "Navigation Demo Page"}} />
+    </Stack.Navigator>
 );
 
 export const AppNavigator = () => (
@@ -45,3 +47,8 @@ export const AppNavigator = () => (
         <HomeNavigator />
     </NavigationContainer>
 );
+
+export const NavigationService = {
+    navigate,
+    push,
+};

@@ -22,9 +22,13 @@ export const HomeMain = React.memo(() => {
     const addLine = useModuleAction(actions.addLine);
     const renderSomeDataItem = ({item}: {item: string}) => <Text>{item}</Text>;
 
+    // Navigation
+    const goToDemo = useModuleAction(actions.goToDemoPage);
+
     return (
         <View style={[globalStyles.flex1Center, styles.container]}>
             <Button title={welcomeText} onPress={changeWelcomeText} />
+            <Button title="Go To Demo Page" onPress={goToDemo} />
             {pokemon ? <Image source={{uri: pokemon.sprites.front_default}} style={styles.image} /> : <ActivityIndicator size="large" color="#00ff00" />}
             <Button title="Press Me To Add A Line Below" onPress={addLine} />
             <FlatList data={someData} renderItem={renderSomeDataItem} keyExtractor={item => item} />
