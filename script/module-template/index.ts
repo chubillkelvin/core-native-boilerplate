@@ -1,6 +1,6 @@
 import { Lifecycle, register, Module, SagaIterator } from "core-native";
 import {State} from "./type";
-import {RootState} from "../app/type/state";
+import {RootState} from "app/type/state";
 import {Main} from "./component/Main";
 
 const initialState: State = {};
