@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {StyleSheet, View, Button, Image, Text, ActivityIndicator, FlatList} from "react-native";
 import {useHomeState} from "../hooks";
-import {actions} from "../index";
+import {actions} from "app/module/common/home";
 import {globalStyles} from "app/util/globalDefinition";
 import {useModuleAction} from "core-native";
 

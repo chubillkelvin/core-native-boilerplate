@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "downlevelIteration": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -20,8 +21,7 @@
     "skipLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
     "strict": true,
-    "target": "esnext",
-    "baseUrl": "."
+    "target": "esnext"
   },
   "include": ["./app"]
 }

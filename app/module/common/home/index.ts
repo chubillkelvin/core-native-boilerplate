@@ -3,7 +3,7 @@ import {State} from "./type";
 import {HomeMain} from "./component/Main";
 import {PokemonAPIService} from "app/service/api/PokemonAPIService";
 import {RootState} from "app/type/state";
-import {NavigationService} from "../../../service/NavigationService";
+import {NavigationService} from "app/service/NavigationService";
 
 const initialState: State = {
     welcomeText: "I am a button, press me!",

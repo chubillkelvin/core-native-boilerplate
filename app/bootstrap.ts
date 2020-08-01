@@ -1,7 +1,7 @@
 import "react-native-gesture-handler";
 import appConfig from "app/conf/default";
 import {startApp} from "core-native";
-import {UIManager, YellowBox} from "react-native";
+import {LogBox, UIManager} from "react-native";
 import {NetworkService} from "app/service/NetworkService";
 import {ErrorHandler} from "app/module/ErrorHandler";
 import {AppComponent} from "app/module/main";
@@ -17,9 +17,8 @@ export function bootstrap() {
         registeredAppName: "CoreNativeBoilerplate",
         componentType: AppComponent,
         errorListener: new ErrorHandler(),
-        logger: undefined,
         beforeRendering: async () => {
-            YellowBox.ignoreWarnings(["Require cycle", "Async storage"]);
+            LogBox.ignoreLogs(["Require cycle", "Async storage"]);
             await Device.getDeviceInfo();
             await NetworkService.init(appConfig.apiURL);
         },

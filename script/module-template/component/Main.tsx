@@ -1,17 +1,14 @@
 import React from "react";
 import {StyleSheet, View} from "react-native";
-import {useDispatch} from "react-redux";
 
-export const {1} = React.memo(() => {
-    const dispatch = useDispatch();
-
+export const Main = () => {
     return <View />;
-});
+};
 
-{1}.displayName = "{1}";
+Main.displayName = "Main";
 
 const styles = StyleSheet.create({
-    content: {
+    container: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
