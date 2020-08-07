@@ -87,6 +87,16 @@ The document says:
 
 Therefore, use class components at your own risk.
 
+# Other special notes
+
+By our design, only `arm64-v8a` and `armeabi-v7a` CPU architectures are supported in Android builds to minimize apk build size.
+
+This reduces about `30%` of the production .apk size. [You can read more about this decision here](https://android.stackexchange.com/questions/186334/what-percentage-of-android-devices-runs-on-x86-architecture).
+
+If you wish to use default build settings that supports all `armeabi`, `arm64-v8a`, `armeabi-v7a`, `x86` and `x86_64`, you can change it in:
+
+`app/android/build.gradle > android > buildTypes > release > ndk`
+
 # References
 
 - [neowu/core-fe-project](https://github.com/neowu/core-fe-project)
