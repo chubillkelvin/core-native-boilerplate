@@ -1,8 +1,7 @@
-import {ErrorListener, Exception} from "core-native";
-import {SagaIterator} from "redux-saga";
+import {ErrorListener, Exception, SagaGenerator} from "core-native";
 
 export class ErrorHandler implements ErrorListener {
-    *onError(error: Exception): SagaIterator {
+    *onError(error: Exception): SagaGenerator {
         console.error(error);
     }
 }

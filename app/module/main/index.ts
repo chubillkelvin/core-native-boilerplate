@@ -1,4 +1,4 @@
-import {Lifecycle, Module, register, SagaIterator} from "core-native";
+import {Lifecycle, Module, register, SagaGenerator} from "core-native";
 import {State} from "./type";
 import {AppMain} from "./component/Main";
 import SplashScreen from "react-native-splash-screen";
@@ -8,7 +8,7 @@ const initialState: State = {};
 
 class MainModule extends Module<RootState, "main"> {
     @Lifecycle()
-    *onEnter(): SagaIterator {
+    *onEnter(): SagaGenerator {
         /**
          * SplashScreen reference: https://github.com/crazycodeboy/react-native-splash-screen
          * For Android: put `launch_screen.png` into appropriate `drawable-xxxx` folder in `android/app/src/main/res`.
@@ -18,6 +18,6 @@ class MainModule extends Module<RootState, "main"> {
     }
 }
 
-const module = register(new MainModule("main", initialState));
-export const actions = module.getActions();
-export const AppComponent = module.attachLifecycle(AppMain);
+const mainModule = register(new MainModule("main", initialState));
+export const actions = mainModule.getActions();
+export const AppComponent = mainModule.attachLifecycle(AppMain);

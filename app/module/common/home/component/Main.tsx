@@ -3,27 +3,27 @@ import {StyleSheet, View, Button, Image, Text, ActivityIndicator, FlatList} from
 import {useHomeState} from "../hooks";
 import {actions} from "app/module/common/home";
 import {globalStyles} from "app/util/globalDefinition";
-import {useModuleAction} from "core-native";
+import {useAction} from "core-native";
 
 export const HomeMain = React.memo(() => {
     // welcomeText
     const welcomeText = useHomeState(state => state.welcomeText);
-    const changeWelcomeText = useModuleAction(actions.changeWelcomeText);
+    const changeWelcomeText = useAction(actions.changeWelcomeText);
 
     // pokemon
     const pokemon = useHomeState(state => state.pokemon);
-    const fetchPokemon = useModuleAction(actions.fetchPokemon, "pikachu");
+    const fetchPokemon = useAction(actions.fetchPokemon, "pikachu");
     useEffect(() => {
         fetchPokemon();
     }, [fetchPokemon]);
 
     // someData
     const someData = useHomeState(state => state.someData);
-    const addLine = useModuleAction(actions.addLine);
+    const addLine = useAction(actions.addLine);
     const renderSomeDataItem = ({item}: {item: string}) => <Text>{item}</Text>;
 
     // Navigation
-    const goToDemo = useModuleAction(actions.goToDemoPage);
+    const goToDemo = useAction(actions.goToDemoPage);
 
     return (
         <View style={[globalStyles.flex1Center, styles.container]}>
