@@ -1,6 +1,6 @@
 # core-native-boilerplate
 
-[![core-native-boilerplate is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RageBill/core-native-boilerplate/blob/master/LICENSE)
+[![core-native-boilerplate is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chubillkelvin/core-native-boilerplate/blob/master/LICENSE)
 [![core-native-boilerplate's current npm package version](https://badge.fury.io/js/core-native-boilerplate.svg)](https://www.npmjs.org/package/core-native-boilerplate)
 
 This project serves as a simple-to-use boilerplate project to implement the [core-native](https://github.com/dionshihk/core-native-project) framework to a react-native project.
@@ -17,7 +17,7 @@ To work with ios, you will need to have [Xcode](https://developer.apple.com/xcod
 
 To work with android, you will need to have [Android Studio](https://developer.android.com/studio) and the relevant java & android sdks.
 
-Then, simply do `git clone https://github.com/RageBill/core-native-boilerplate.git <YOUR_PROJECT_NAME>`.
+Then, simply do `git clone https://github.com/chubillkelvin/core-native-boilerplate.git <YOUR_PROJECT_NAME>`.
 
 # Usage
 
